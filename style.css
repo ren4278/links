@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url(‘https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap’);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/cofe.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: ‘Signika’, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(103, 103, 103, 0.4823529412);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.main .content {
+  position: relative;
+  z-index: 2;
+}
+.main #anime {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main #anime canvas {
+  background-color: transparent !important;
+}
+.main .profil_img {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 10px solid #000;
+  display: block;
+  margin: 0 auto;
+  background-image: url(img/hosoya.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main p {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+.main ul {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+.main ul li {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.568);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  display: flex;
+}
+.main ul li:not(:first-child) {
+  margin-top: 20px;
+}
+.main ul li a {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 23%;
+}
+.main ul li img {
+  width: 26px;
+  height: fit-content;
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
